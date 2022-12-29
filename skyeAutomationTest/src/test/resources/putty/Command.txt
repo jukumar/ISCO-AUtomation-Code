@@ -1,0 +1,1 @@
+sudo tail -400f /opt/skyeapp-data/logs/catalina.out

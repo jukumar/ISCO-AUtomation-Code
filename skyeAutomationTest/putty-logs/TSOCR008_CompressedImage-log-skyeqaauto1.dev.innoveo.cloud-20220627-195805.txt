@@ -1,0 +1,414 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2022.06.27 19:58:05 =~=~=~=~=~=~=~=~=~=~=~=
+Using username "innkare".
+Pre-authentication banner message from server:
+| +-----------------------------------------------------------------+
+| | This system is for the use of authorized users only.  Usage of  |
+| | this system may be monitored and recorded by system personnel.  |
+| |                                                                 |
+| | Anyone using this system expressly consents to such monitoring  |
+| | and is advised that if such monitoring reveals possible         |
+| | evidence of criminal activity, system personnel may provide the |
+| | evidence from such monitoring to law enforcement officials.     |
+| +-----------------------------------------------------------------+
+End of banner message from server
+Authenticating with public key "rsa-key-2022" from agent
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.SameSiteCookieHeaderFilter.doFilter(SameSiteCookieHeaderFilter.java:43) [classes/:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.web.filter.CorsFilter.allowCors(CorsFilter.java:66) [skye-web-springmvc-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.web.filter.CorsFilter.doFilter(CorsFilter.java:26) [skye-web-springmvc-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71) [log4j-web-2.17.1.jar:2.17.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [catalina.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.41]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: com.innoveo.skye.services.core.services.delegate.datacapture.DataCaptureException: No image is uploaded
+	at com.innoveo.skye.services.core.services.delegate.datacapture.DataCaptureServiceDelegate.lambda$getBase64ImageBytes$0(DataCaptureServiceDelegate.java:165) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at java.util.Optional.orElseThrow(Unknown Source) ~[?:?]
+	at com.innoveo.skye.services.core.services.delegate.datacapture.DataCaptureServiceDelegate.getBase64ImageBytes(DataCaptureServiceDelegate.java:165) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.services.delegate.datacapture.DataCaptureServiceDelegate.buildRequestBody(DataCaptureServiceDelegate.java:138) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.services.delegate.datacapture.DataCaptureServiceDelegate.executeServiceCall(DataCaptureServiceDelegate.java:126) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.services.delegate.datacapture.DataCaptureServiceDelegate.afterSetValue(DataCaptureServiceDelegate.java:71) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.implementation.bo.ImplementationServiceDelegateAttributeBO.setValue(ImplementationServiceDelegateAttributeBO.java:50) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.implementation.bo.ImplementationServiceDelegateAttributeBO.setValueFormattedBasic(ImplementationServiceDelegateAttributeBO.java:91) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.api.implementation.extension.AbstractImplementationAttributeExtension.setValueFormatted(AbstractImplementationAttributeExtension.java:43) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.implementation.bo.ImplementationAttributeBO.setValueFormatted(ImplementationAttributeBO.java:771) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.rule.DependencyRule.updateAttributeValue(DependencyRule.java:161) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.rule.DependencyRule.lambda$triggerForAttributes$6(DependencyRule.java:115) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) ~[?:?]
+	at java.util.stream.DistinctOps$1$2.accept(Unknown Source) ~[?:?]
+	at java.util.stream.DistinctOps$1$2.accept(Unknown Source) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source) ~[?:?]
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source) ~[?:?]
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(Unknown Source) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source) ~[?:?]
+	at com.innoveo.skye.services.core.common.rule.DependencyRule.triggerForAttributes(DependencyRule.java:115) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.rule.RuleManagerImpl.lambda$updateDependentAttributes$1(RuleManagerImpl.java:82) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at java.util.LinkedHashMap.forEach(Unknown Source) ~[?:?]
+	at com.innoveo.skye.services.core.common.rule.RuleManagerImpl.updateDependentAttributes(RuleManagerImpl.java:79) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.rule.RuleManagerImpl.triggerRules(RuleManagerImpl.java:47) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.implementation.bo.ImplementationAttributeBO.updateValueDependents(ImplementationAttributeBO.java:754) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.implementation.bo.ImplementationAttributeBO.setValueObjectValue(ImplementationAttributeBO.java:731) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.implementation.bo.ImplementationAttributeBO.setValueBasic(ImplementationAttributeBO.java:442) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.api.implementation.extension.AbstractImplementationAttributeExtension.setValue(AbstractImplementationAttributeExtension.java:39) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.implementation.bo.ImplementationAttributeBO.setValue(ImplementationAttributeBO.java:413) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.implementation.bo.ImplementationAttributeBO.setValueFormattedBasic(ImplementationAttributeBO.java:779) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.api.implementation.extension.AbstractImplementationAttributeExtension.setValueFormatted(AbstractImplementationAttributeExtension.java:43) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.implementation.bo.ImplementationAttributeBO.setValueFormatted(ImplementationAttributeBO.java:771) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.implementation.root.bo.ImplementationRootBO.setAttributeValue(ImplementationRootBO.java:716) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.implementation.root.bo.ImplementationRootBO.setAttributeValue(ImplementationRootBO.java:673) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.implementation.root.bo.ImplementationRootBO.lambda$setAttributeValues$12(ImplementationRootBO.java:654) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Unknown Source) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(Unknown Source) ~[?:?]
+	at com.innoveo.skye.services.core.implementation.root.bo.ImplementationRootBO.setAttributeValues(ImplementationRootBO.java:655) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.services.ImplementationRootUpdateServiceImpl.updateWithoutValidation(ImplementationRootUpdateServiceImpl.java:365) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	... 122 more
+2022-06-27 14:00:22,943 [http-nio-8443-exec-12] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:00:22,944 [http-nio-8443-exec-12] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:00:22,944 [http-nio-8443-exec-12] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:00:58,813 [http-nio-8443-exec-11] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:01:24,597 [http-nio-8443-exec-13] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:01:26,463 [http-nio-8443-exec-13] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:01:39,199 [http-nio-8443-exec-6] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:01:40,187 [http-nio-8443-exec-6] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:01:55,307 [http-nio-8443-exec-6] userc1 ERROR capture - No image is uploaded
+2022-06-27 14:04:54,875 [http-nio-8443-exec-4]  ERROR general - An exception was thrown while processing the request
+java.lang.IllegalArgumentException: Resource 'Innoveo_Skye_Logo_Straight_White_Screen_png' in definition 'Application' for locale 'en_US' not found.
+	at com.innoveo.skye.services.domain.resource.DefinitionResourceServiceImpl.getResource(DefinitionResourceServiceImpl.java:63) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.spring.controllers.rest.v2.ResourceController.getResource(ResourceController.java:192) ~[skye-web-springmvc-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.spring.controllers.rest.v2.ResourceController.getApplicationResource(ResourceController.java:152) ~[skye-web-springmvc-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor639.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [servlet-api.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.javasimon.javaee.SimonServletFilter.doFilterWithMonitoring(SimonServletFilter.java:215) [javasimon-javaee-3.2.1.jar:?]
+	at org.javasimon.javaee.SimonServletFilter.doFilter(SimonServletFilter.java:205) [javasimon-javaee-3.2.1.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.AuditTrailFilter.doFilter(AuditTrailFilter.java:48) [classes/:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.UserToLogFilter.doFilter(UserToLogFilter.java:56) [classes/:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.ShallowEtagHeaderFilter.doFilterInternal(ShallowEtagHeaderFilter.java:106) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationLogoutFilter.doFilter(FederationLogoutFilter.java:49) [skye-web-springfediz-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationMetadataExposingFilter.doFilter(FederationMetadataExposingFilter.java:89) [skye-web-springfediz-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.9.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.SameSiteCookieHeaderFilter.doFilter(SameSiteCookieHeaderFilter.java:43) [classes/:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.web.filter.CorsFilter.allowCors(CorsFilter.java:66) [skye-web-springmvc-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.web.filter.CorsFilter.doFilter(CorsFilter.java:26) [skye-web-springmvc-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71) [log4j-web-2.17.1.jar:2.17.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [catalina.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.41]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+2022-06-27 14:05:28,492 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:05:28,493 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:05:28,493 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:05:52,180 [http-nio-8443-exec-10] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:05:53,957 [http-nio-8443-exec-10] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:06:12,277 [http-nio-8443-exec-4] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:06:48,418 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:06:48,418 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:06:48,419 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:07:11,038 [http-nio-8443-exec-7] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:07:11,220 [http-nio-8443-exec-7] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Provided template id Non-ExistinTemplate not found.\"}
+2022-06-27 14:07:39,258 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:07:39,258 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:07:39,258 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:08:02,336 [http-nio-8443-exec-7] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:08:02,509 [http-nio-8443-exec-7] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Provided template id TSOCR003_driving not found.\"}
+2022-06-27 14:08:30,750 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:08:30,750 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:08:30,751 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:08:54,769 [http-nio-8443-exec-13] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:09:13,730 [http-nio-8443-exec-11] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:09:32,684 [http-nio-8443-exec-12] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:09:51,018 [http-nio-8443-exec-11] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:09:51,239 [http-nio-8443-exec-11] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Backend service internal server error\"}
+2022-06-27 14:10:07,421 [http-nio-8443-exec-7] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:10:19,330 [http-nio-8443-exec-5] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:10:20,047 [http-nio-8443-exec-5] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Backend service internal server error\"}
+2022-06-27 14:10:45,498 [http-nio-8443-exec-2] userc1 ERROR reference - Reference 'HorizontalProductSelectorComponent.@ComponentOwner' with UUID '11ecf622-efc4-8f5e-bdd6-878b551b3238' is not set because implementation of model text-id '' with UUID '50e55f44-4db9-423b-939f-98c7407d47d8;50e55f44-4db9-423b-939f-98c7407d47d8' was not found
+2022-06-27 14:10:45,505 [http-nio-8443-exec-4] userc1 ERROR reference - Reference 'ReferralSearch.@ComponentOwner' with UUID '11ecf622-efc4-413d-bdd6-878b551b3238' is not set because implementation of model text-id '' with UUID '50e55f44-4db9-423b-939f-98c7407d47d8;50e55f44-4db9-423b-939f-98c7407d47d8' was not found
+2022-06-27 14:10:45,518 [http-nio-8443-exec-4] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:10:45,519 [http-nio-8443-exec-4] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:10:45,519 [http-nio-8443-exec-4] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:11:02,190 [http-nio-8443-exec-10] userc1 WARN reference - Could not find referenced implementation root in cache while computing graph for cache cleaning
+2022-06-27 14:11:02,190 [http-nio-8443-exec-10] userc1 WARN reference - Could not find referenced implementation root in cache while computing graph for cache cleaning
+2022-06-27 14:11:07,057 [http-nio-8443-exec-6] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:11:07,945 [http-nio-8443-exec-6] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:11:21,491 [http-nio-8443-exec-5] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:11:59,308 [http-nio-8443-exec-7] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:12:04,284 [http-nio-8443-exec-7] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Backend service internal server error\"}
+2022-06-27 14:12:58,467 [http-nio-8443-exec-5] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:13:00,115 [http-nio-8443-exec-5] userc1 ERROR capture - Data capture failed: <html>[CARRIAGE_RETURN][NEW_LINE]<head><title>413 Request Entity Too Large</title></head>[CARRIAGE_RETURN][NEW_LINE]<body>[CARRIAGE_RETURN][NEW_LINE]<center><h1>413 Request Entity Too Large</h1></center>[CARRIAGE_RETURN][NEW_LINE]<hr><center>nginx</center>[CARRIAGE_RETURN][NEW_LINE]</body>[CARRIAGE_RETURN][NEW_LINE]</html>[CARRIAGE_RETURN][NEW_LINE]
+2022-06-27 14:13:24,327 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:13:24,328 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:13:24,328 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:13:45,446 [http-nio-8443-exec-7] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:14:41,151 [http-nio-8443-exec-12] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:14:46,315 [http-nio-8443-exec-12] userc1 ERROR capture - Data capture failed: <html>[CARRIAGE_RETURN][NEW_LINE]<head><title>413 Request Entity Too Large</title></head>[CARRIAGE_RETURN][NEW_LINE]<body>[CARRIAGE_RETURN][NEW_LINE]<center><h1>413 Request Entity Too Large</h1></center>[CARRIAGE_RETURN][NEW_LINE]<hr><center>nginx</center>[CARRIAGE_RETURN][NEW_LINE]</body>[CARRIAGE_RETURN][NEW_LINE]</html>[CARRIAGE_RETURN][NEW_LINE]
+2022-06-27 14:15:37,899 [http-nio-8443-exec-2] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:15:43,614 [http-nio-8443-exec-2] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:16:18,154 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:16:18,155 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:16:18,155 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:16:39,865 [http-nio-8443-exec-2] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:17:31,902 [http-nio-8443-exec-4] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:17:31,903 [http-nio-8443-exec-4] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:17:31,903 [http-nio-8443-exec-4] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:18:00,376 [http-nio-8443-exec-11] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:18:02,561 [http-nio-8443-exec-11] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:18:07,069 [http-nio-8443-exec-11] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:18:08,975 [http-nio-8443-exec-11] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:18:10,889 [http-nio-8443-exec-11] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:18:24,013 [http-nio-8443-exec-11] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:18:25,661 [http-nio-8443-exec-11] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:18:27,348 [http-nio-8443-exec-11] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:18:29,005 [http-nio-8443-exec-11] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:18:32,626 [http-nio-8443-exec-11] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:19:00,754 [http-nio-8443-exec-7] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:19:00,755 [http-nio-8443-exec-7] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:19:00,755 [http-nio-8443-exec-7] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:19:23,520 [http-nio-8443-exec-4] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:19:25,462 [http-nio-8443-exec-4] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}
+2022-06-27 14:19:52,502 [http-nio-8443-exec-6] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:20:30,440 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:20:30,441 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:20:30,441 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:24:54,229 [http-nio-8443-exec-12]  ERROR general - An exception was thrown while processing the request
+java.lang.IllegalArgumentException: Resource 'Innoveo_Skye_Logo_Straight_White_Screen_png' in definition 'Application' for locale 'en_US' not found.
+	at com.innoveo.skye.services.domain.resource.DefinitionResourceServiceImpl.getResource(DefinitionResourceServiceImpl.java:63) ~[skye-services-core-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.spring.controllers.rest.v2.ResourceController.getResource(ResourceController.java:192) ~[skye-web-springmvc-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.spring.controllers.rest.v2.ResourceController.getApplicationResource(ResourceController.java:152) ~[skye-web-springmvc-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor639.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [servlet-api.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.javasimon.javaee.SimonServletFilter.doFilterWithMonitoring(SimonServletFilter.java:215) [javasimon-javaee-3.2.1.jar:?]
+	at org.javasimon.javaee.SimonServletFilter.doFilter(SimonServletFilter.java:205) [javasimon-javaee-3.2.1.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.AuditTrailFilter.doFilter(AuditTrailFilter.java:48) [classes/:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.UserToLogFilter.doFilter(UserToLogFilter.java:56) [classes/:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.ShallowEtagHeaderFilter.doFilterInternal(ShallowEtagHeaderFilter.java:106) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationLogoutFilter.doFilter(FederationLogoutFilter.java:49) [skye-web-springfediz-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationMetadataExposingFilter.doFilter(FederationMetadataExposingFilter.java:89) [skye-web-springfediz-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.9.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.SameSiteCookieHeaderFilter.doFilter(SameSiteCookieHeaderFilter.java:43) [classes/:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.web.filter.CorsFilter.allowCors(CorsFilter.java:66) [skye-web-springmvc-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at com.innoveo.skye.web.filter.CorsFilter.doFilter(CorsFilter.java:26) [skye-web-springmvc-8.9.0-SNAPSHOT.jar:8.9.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71) [log4j-web-2.17.1.jar:2.17.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [catalina.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.41]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+2022-06-27 14:25:24,777 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:25:24,778 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:25:24,779 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-06-27 14:25:50,147 [http-nio-8443-exec-6] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:26:48,707 [http-nio-8443-exec-10] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:26:53,148 [http-nio-8443-exec-10] userc1 ERROR capture - Data capture failed: <html>[CARRIAGE_RETURN][NEW_LINE]<head><title>413 Request Entity Too Large</title></head>[CARRIAGE_RETURN][NEW_LINE]<body>[CARRIAGE_RETURN][NEW_LINE]<center><h1>413 Request Entity Too Large</h1></center>[CARRIAGE_RETURN][NEW_LINE]<hr><center>nginx</center>[CARRIAGE_RETURN][NEW_LINE]</body>[CARRIAGE_RETURN][NEW_LINE]</html>[CARRIAGE_RETURN][NEW_LINE]
+2022-06-27 14:27:46,857 [http-nio-8443-exec-13] userc1 INFO security - The antivirus is not activated since no valid URL has been added to the property 'security.antivirus.url'.
+2022-06-27 14:27:52,240 [http-nio-8443-exec-13] userc1 ERROR capture - Data capture failed: {\"status\":\"Failed\",\"errorMessage\":\"Template Not Matched - No keyword matched in existing templates\"}

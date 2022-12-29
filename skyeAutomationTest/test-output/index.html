@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Skye_Regression_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Skye Regression Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Skye_Regression_Suite" class="navigator-link ">
+                    <span>D:\LatestProject\skyeAutomationTest\skyeAutomationTest\src\test\resources\runners\chrome_testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Skye_Regression_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Skye_Regression_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Skye_Regression_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Skye_Regression_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Skye_Regression_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Skye_Regression_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Skye_Regression_Suite" class="hide-methods failed suite-Skye_Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Skye_Regression_Suite -->
+                      <a href="#" panel-name="suite-Skye_Regression_Suite" class="show-methods failed suite-Skye_Regression_Suite"> (show)</a> <!-- show-methods failed suite-Skye_Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Skye_Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Skye_Regression_Suite" title="com.ISCO.testcases.CommonTC" class="method navigator-link" hash-for-method="UserTC001">UserTC001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Skye_Regression_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Skye_Regression_Suite" class="hide-methods passed suite-Skye_Regression_Suite"> (hide)</a> <!-- hide-methods passed suite-Skye_Regression_Suite -->
+                      <a href="#" panel-name="suite-Skye_Regression_Suite" class="show-methods passed suite-Skye_Regression_Suite"> (show)</a> <!-- show-methods passed suite-Skye_Regression_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Skye_Regression_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Skye_Regression_Suite" title="com.ISCO.testcases.CommonTC" class="method navigator-link" hash-for-method="UserTC002">UserTC002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Skye_Regression_Suite" title="com.ISCO.testcases.CommonTC" class="method navigator-link" hash-for-method="UserTC005">UserTC005</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Skye_Regression_Suite" title="com.ISCO.testcases.CommonTC" class="method navigator-link" hash-for-method="UserTC006">UserTC006</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Skye_Regression_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Skye_Regression_Suite" class="panel Skye_Regression_Suite">
+          <div class="suite-Skye_Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ISCO.testcases.CommonTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserTC001">
+                  </a> <!-- UserTC001 -->
+                  <span class="method-name">UserTC001</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Expected : jude3.kumar@mailinator.com. / Actual : jude3.kumar@mailinator.com (Inactive) expected [jude3.kumar@mailinator.com] but found [jude3.kumar@mailinator.com (Inactive)]
+	at com.ISCO.utilities.commonFunctions.verifyDefaultValue(commonFunctions.java:303)
+	at com.ISCO.pages.CommonPage.User001(CommonPage.java:244)
+	at com.ISCO.testcases.CommonTC.UserTC001(CommonTC.java:65)
+... Removed 28 stack frames<br/> java.lang.AssertionError: Expected : jude3.kumar@mailinator.com. / Actual : jude3.kumar@mailinator.com (Inactive) expected [jude3.kumar@mailinator.com] but found [jude3.kumar@mailinator.com (Inactive)]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.ISCO.utilities.commonFunctions.verifyDefaultValue(commonFunctions.java:303)
+	at com.ISCO.pages.CommonPage.User001(CommonPage.java:244)
+	at com.ISCO.testcases.CommonTC.UserTC001(CommonTC.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>com.ISCO.utilities.commonFunctions.verifyDefaultValue(commonFunctions.java:303)<br>com.ISCO.pages.CommonPage.User001(CommonPage.java:244)<br>com.ISCO.testcases.CommonTC.UserTC001(CommonTC.java:65)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:568)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Skye_Regression_Suite-class-failed -->
+          <div class="suite-Skye_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ISCO.testcases.CommonTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserTC002">
+                  </a> <!-- UserTC002 -->
+                  <span class="method-name">UserTC002</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserTC005">
+                  </a> <!-- UserTC005 -->
+                  <span class="method-name">UserTC005</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserTC006">
+                  </a> <!-- UserTC006 -->
+                  <span class="method-name">UserTC006</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Skye_Regression_Suite-class-passed -->
+        </div> <!-- panel Skye_Regression_Suite -->
+        <div panel-name="test-xml-Skye_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\LatestProject\skyeAutomationTest\skyeAutomationTest\src\test\resources\runners\chrome_testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;none&quot; name=&quot;Skye Regression Suite&quot;&gt;
+  &lt;parameter name=&quot;puttyURL&quot; value=&quot;skyeqaauto1.dev.innoveo.cloud&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+  &lt;parameter name=&quot;appURL&quot; value=&quot;https://isco.k8sqa.pst.innoveo.cloud/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.ISCO.listeners.TestListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Skye Regression Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ISCO.testcases.LoginTC&quot;/&gt;
+      &lt;class name=&quot;com.ISCO.testcases.CommonTC&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;UserTC001&quot;/&gt;
+          &lt;include name=&quot;UserTC002&quot;/&gt;
+          &lt;include name=&quot;UserTC005&quot;/&gt;
+          &lt;include name=&quot;UserTC006&quot;/&gt;
+          &lt;exclude name=&quot;UserTC003&quot;/&gt;
+          &lt;exclude name=&quot;UserTC007&quot;/&gt;
+          &lt;exclude name=&quot;UserTC008&quot;/&gt;
+          &lt;exclude name=&quot;UserTC009&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC010&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC011&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC012&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC013&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC014&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC015&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC016&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC017&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC018&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC019&quot;/&gt;
+          &lt;exclude name=&quot;AccountTC020&quot;/&gt;
+          &lt;exclude name=&quot;ApplicationTC021&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.ISCO.testcases.CommonTC --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Skye Regression Tests --&gt;
+&lt;/suite&gt; &lt;!-- Skye Regression Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Skye_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Skye Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Skye Regression Tests (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Skye_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Skye Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Skye_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Skye Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Skye_Regression_Suite');
+function tableData_Skye_Regression_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'UserTC001')
+data.setCell(0, 2, 'com.ISCO.testcases.CommonTC')
+data.setCell(0, 3, 17048);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'UserTC005')
+data.setCell(1, 2, 'com.ISCO.testcases.CommonTC')
+data.setCell(1, 3, 16930);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'UserTC006')
+data.setCell(2, 2, 'com.ISCO.testcases.CommonTC')
+data.setCell(2, 3, 16853);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'UserTC002')
+data.setCell(3, 2, 'com.ISCO.testcases.CommonTC')
+data.setCell(3, 3, 5096);
+window.suiteTableData['Skye_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Skye_Regression_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <div id="times-div-Skye_Regression_Suite">
+              </div> <!-- times-div-Skye_Regression_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Skye_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Skye Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Skye_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">18 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ISCO.testcases.CommonTC</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Setup</span>
+                <br/>
+                <span class="ignored-method-name">ApplicationTC021</span>
+                <br/>
+                <span class="ignored-method-name">UserTC003</span>
+                <br/>
+                <span class="ignored-method-name">UserTC008</span>
+                <br/>
+                <span class="ignored-method-name">UserTC009</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC019</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC016</span>
+                <br/>
+                <span class="ignored-method-name">UserTC007</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC015</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC018</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC017</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC012</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC011</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC014</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC013</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC010</span>
+                <br/>
+                <span class="ignored-method-name">AccountTC020</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Skye_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ISCO.testcases.LoginTC</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">Setup(Edge, https://isco.k8sqa.pst.innoveo.cloud/, skyeqaauto1.dev.innoveo.cloud)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-suite before">
+                <span class="method-name">loadTestData</span>
+                <span class="method-start">10679 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">LoginToSkye</span>
+                <span class="method-start">11578 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ISCO.testcases.CommonTC</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loadPageElements</span>
+                <span class="method-start">22766 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateGATab</span>
+                <span class="method-start">22784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserTC001</span>
+                <span class="method-start">22876 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateGATab</span>
+                <span class="method-start">40094 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UserTC002</span>
+                <span class="method-start">40197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateGATab</span>
+                <span class="method-start">45295 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UserTC005</span>
+                <span class="method-start">45377 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateGATab</span>
+                <span class="method-start">62309 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UserTC006</span>
+                <span class="method-start">62418 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ISCO.testcases.LoginTC</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">79533 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

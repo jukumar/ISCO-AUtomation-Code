@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.skye.testcases.AccountsTC">
+        <methods>
+          <include name="AccountTC017"/>
+          <include name="AccountTC016"/>
+          <include name="AccountTC013"/>
+          <include name="AccountTC012"/>
+          <include name="AccountTC015"/>
+          <include name="AccountTC014"/>
+          <include name="AccountTC011"/>
+          <include name="AccountTC010"/>
+        </methods>
+      </class> <!-- com.skye.testcases.AccountsTC -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

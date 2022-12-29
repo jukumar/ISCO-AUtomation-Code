@@ -1,0 +1,414 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2022.09.14 16:21:04 =~=~=~=~=~=~=~=~=~=~=~=
+Using username "innkare".
+Pre-authentication banner message from server:
+| +-----------------------------------------------------------------+
+| | This system is for the use of authorized users only.  Usage of  |
+| | this system may be monitored and recorded by system personnel.  |
+| |                                                                 |
+| | Anyone using this system expressly consents to such monitoring  |
+| | and is advised that if such monitoring reveals possible         |
+| | evidence of criminal activity, system personnel may provide the |
+| | evidence from such monitoring to law enforcement officials.     |
+| +-----------------------------------------------------------------+
+End of banner message from server
+Authenticating with public key "rsa-key-2022" from agent
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [servlet-api.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.javasimon.javaee.SimonServletFilter.doFilterWithMonitoring(SimonServletFilter.java:215) [javasimon-javaee-3.2.1.jar:?]
+	at org.javasimon.javaee.SimonServletFilter.doFilter(SimonServletFilter.java:205) [javasimon-javaee-3.2.1.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.AuditTrailFilter.doFilter(AuditTrailFilter.java:48) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.UserToLogFilter.doFilter(UserToLogFilter.java:56) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.ShallowEtagHeaderFilter.doFilterInternal(ShallowEtagHeaderFilter.java:106) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationLogoutFilter.doFilter(FederationLogoutFilter.java:49) [skye-web-springfediz-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationMetadataExposingFilter.doFilter(FederationMetadataExposingFilter.java:89) [skye-web-springfediz-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.11.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.SameSiteCookieHeaderFilter.doFilter(SameSiteCookieHeaderFilter.java:43) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.web.filter.CorsFilter.allowCors(CorsFilter.java:68) [skye-web-springmvc-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at com.innoveo.skye.web.filter.CorsFilter.doFilter(CorsFilter.java:26) [skye-web-springmvc-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71) [log4j-web-2.17.1.jar:2.17.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [catalina.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.41]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+2022-09-14 07:27:49,486 [http-nio-8443-exec-1]  WARN core - Could not resolve serviceContext variable 'channel' in Application
+2022-09-14 07:27:49,487 [http-nio-8443-exec-1]  WARN core - Could not resolve serviceContext variable 'skyeRole' in Application
+2022-09-14 07:27:49,501 [http-nio-8443-exec-1]  WARN core - Could not resolve serviceContext variable 'channel' in Application
+2022-09-14 07:27:49,805 [http-nio-8443-exec-5] usercc WARN core - Could not resolve serviceContext variable 'channel' in Application
+2022-09-14 07:27:49,816 [http-nio-8443-exec-5] usercc WARN core - Could not resolve serviceContext variable 'channel' in Application
+2022-09-14 07:28:04,266 [http-nio-8443-exec-8] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:04,271 [http-nio-8443-exec-8] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:04,272 [http-nio-8443-exec-8] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:05,164 [http-nio-8443-exec-3] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:05,165 [http-nio-8443-exec-3] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:05,166 [http-nio-8443-exec-3] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:05,719 [http-nio-8443-exec-7] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:05,720 [http-nio-8443-exec-7] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:05,733 [http-nio-8443-exec-7] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:06,566 [http-nio-8443-exec-9] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:06,567 [http-nio-8443-exec-9] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 07:28:06,568 [http-nio-8443-exec-9] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+14-Sep-2022 08:09:39.847 INFO [http-nio-8443-exec-8] com.braintreegateway.util.Http.httpDo [Braintree] [14/Sep/2022 08:09:39 +0000]] POST /merchants/x686r5cykz9grr3q/customers
+14-Sep-2022 08:09:41.266 INFO [http-nio-8443-exec-8] com.braintreegateway.util.Http.httpDo [Braintree] [14/Sep/2022 08:09:41 +0000]] POST /merchants/x686r5cykz9grr3q/client_token
+2022-09-14 08:23:28,014 [http-nio-8443-exec-6] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:28,015 [http-nio-8443-exec-6] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:28,016 [http-nio-8443-exec-6] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:28,353 [http-nio-8443-exec-4] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:28,354 [http-nio-8443-exec-4] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:28,354 [http-nio-8443-exec-4] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:28,834 [http-nio-8443-exec-9] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:28,835 [http-nio-8443-exec-9] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:28,835 [http-nio-8443-exec-9] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:29,208 [http-nio-8443-exec-5] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:29,208 [http-nio-8443-exec-5] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 08:23:29,209 [http-nio-8443-exec-5] usercc ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:21,796 [http-nio-8443-exec-7]  ERROR general - An exception was thrown while processing the request
+java.lang.IllegalArgumentException: Resource 'Innoveo_Skye_Logo_Straight_White_Screen_png' in definition 'Application' for locale 'en_US' not found.
+	at com.innoveo.skye.services.domain.resource.DefinitionResourceServiceImpl.getResource(DefinitionResourceServiceImpl.java:63) ~[skye-services-core-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at com.innoveo.skye.spring.controllers.rest.v2.ResourceController.getResource(ResourceController.java:192) ~[skye-web-springmvc-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at com.innoveo.skye.spring.controllers.rest.v2.ResourceController.getApplicationResource(ResourceController.java:152) ~[skye-web-springmvc-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [servlet-api.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.javasimon.javaee.SimonServletFilter.doFilterWithMonitoring(SimonServletFilter.java:215) [javasimon-javaee-3.2.1.jar:?]
+	at org.javasimon.javaee.SimonServletFilter.doFilter(SimonServletFilter.java:205) [javasimon-javaee-3.2.1.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.AuditTrailFilter.doFilter(AuditTrailFilter.java:48) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.UserToLogFilter.doFilter(UserToLogFilter.java:56) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.ShallowEtagHeaderFilter.doFilterInternal(ShallowEtagHeaderFilter.java:106) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationLogoutFilter.doFilter(FederationLogoutFilter.java:49) [skye-web-springfediz-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationMetadataExposingFilter.doFilter(FederationMetadataExposingFilter.java:89) [skye-web-springfediz-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.11.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.SameSiteCookieHeaderFilter.doFilter(SameSiteCookieHeaderFilter.java:43) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.web.filter.CorsFilter.allowCors(CorsFilter.java:68) [skye-web-springmvc-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at com.innoveo.skye.web.filter.CorsFilter.doFilter(CorsFilter.java:26) [skye-web-springmvc-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71) [log4j-web-2.17.1.jar:2.17.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [catalina.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.41]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+2022-09-14 10:43:50,599 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:50,600 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:50,600 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:50,787 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:50,788 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:50,788 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:50,954 [http-nio-8443-exec-4] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:50,955 [http-nio-8443-exec-4] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:50,956 [http-nio-8443-exec-4] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:51,119 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:51,119 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:43:51,120 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:29,251 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:29,252 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:29,254 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:29,720 [http-nio-8443-exec-7] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:29,720 [http-nio-8443-exec-7] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:29,721 [http-nio-8443-exec-7] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:30,303 [http-nio-8443-exec-11] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:30,307 [http-nio-8443-exec-11] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:30,307 [http-nio-8443-exec-11] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:30,847 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:30,847 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:44:30,848 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:16,570 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:16,570 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:16,571 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:17,062 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:17,063 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:17,064 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:17,554 [http-nio-8443-exec-7] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:17,555 [http-nio-8443-exec-7] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:17,555 [http-nio-8443-exec-7] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:18,319 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:18,319 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:45:18,319 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:10,220 [http-nio-8443-exec-11] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:10,220 [http-nio-8443-exec-11] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:10,221 [http-nio-8443-exec-11] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:10,727 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:10,728 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:10,728 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:11,228 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:11,229 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:11,229 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:11,821 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:11,821 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:46:11,821 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:31,066 [http-nio-8443-exec-5]  ERROR general - An exception was thrown while processing the request
+java.lang.IllegalArgumentException: Resource 'Innoveo_Skye_Logo_Straight_White_Screen_png' in definition 'Application' for locale 'en_US' not found.
+	at com.innoveo.skye.services.domain.resource.DefinitionResourceServiceImpl.getResource(DefinitionResourceServiceImpl.java:63) ~[skye-services-core-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at com.innoveo.skye.spring.controllers.rest.v2.ResourceController.getResource(ResourceController.java:192) ~[skye-web-springmvc-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at com.innoveo.skye.spring.controllers.rest.v2.ResourceController.getApplicationResource(ResourceController.java:152) ~[skye-web-springmvc-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [servlet-api.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.javasimon.javaee.SimonServletFilter.doFilterWithMonitoring(SimonServletFilter.java:215) [javasimon-javaee-3.2.1.jar:?]
+	at org.javasimon.javaee.SimonServletFilter.doFilter(SimonServletFilter.java:205) [javasimon-javaee-3.2.1.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.AuditTrailFilter.doFilter(AuditTrailFilter.java:48) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.UserToLogFilter.doFilter(UserToLogFilter.java:56) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.ShallowEtagHeaderFilter.doFilterInternal(ShallowEtagHeaderFilter.java:106) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationLogoutFilter.doFilter(FederationLogoutFilter.java:49) [skye-web-springfediz-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationMetadataExposingFilter.doFilter(FederationMetadataExposingFilter.java:89) [skye-web-springfediz-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.11.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.SameSiteCookieHeaderFilter.doFilter(SameSiteCookieHeaderFilter.java:43) [classes/:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.web.filter.CorsFilter.allowCors(CorsFilter.java:68) [skye-web-springmvc-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at com.innoveo.skye.web.filter.CorsFilter.doFilter(CorsFilter.java:26) [skye-web-springmvc-8.11.0-SNAPSHOT.jar:8.11.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71) [log4j-web-2.17.1.jar:2.17.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [catalina.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.41]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+2022-09-14 10:49:49,820 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:49,821 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:49,821 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:49,844 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:49,844 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:49,845 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:50,041 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:50,041 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:50,041 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:50,042 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:50,043 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:49:50,043 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:32,830 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:32,830 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:32,831 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:32,842 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:32,843 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:32,844 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:33,154 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:33,155 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:33,155 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:33,174 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:33,174 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-09-14 10:50:33,175 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'

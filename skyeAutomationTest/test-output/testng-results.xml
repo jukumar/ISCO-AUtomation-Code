@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-24T10:13:41Z" name="Skye Regression Suite" finished-at="2022-11-24T10:14:48Z" duration-ms="67697">
+    <groups>
+    </groups>
+    <test started-at="2022-11-24T10:13:41Z" name="Skye Regression Tests" finished-at="2022-11-24T10:14:48Z" duration-ms="67697">
+      <class name="com.ISCO.testcases.CommonTC">
+        <test-method is-config="true" signature="loadPageElements()[pri:0, instance:com.ISCO.testcases.CommonTC@7668d560]" started-at="2022-11-24T15:43:52Z" name="loadPageElements" finished-at="2022-11-24T15:43:52Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPageElements -->
+        <test-method is-config="true" signature="navigateGATab()[pri:0, instance:com.ISCO.testcases.CommonTC@7668d560]" started-at="2022-11-24T15:43:52Z" name="navigateGATab" finished-at="2022-11-24T15:43:52Z" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateGATab -->
+        <test-method signature="UserTC001()[pri:0, instance:com.ISCO.testcases.CommonTC@7668d560]" started-at="2022-11-24T15:43:52Z" name="UserTC001" finished-at="2022-11-24T15:44:09Z" duration-ms="17048" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected : jude3.kumar@mailinator.com. / Actual : jude3.kumar@mailinator.com (Inactive) expected [jude3.kumar@mailinator.com] but found [jude3.kumar@mailinator.com (Inactive)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected : jude3.kumar@mailinator.com. / Actual : jude3.kumar@mailinator.com (Inactive) expected [jude3.kumar@mailinator.com] but found [jude3.kumar@mailinator.com (Inactive)]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.ISCO.utilities.commonFunctions.verifyDefaultValue(commonFunctions.java:303)
+	at com.ISCO.pages.CommonPage.User001(CommonPage.java:244)
+	at com.ISCO.testcases.CommonTC.UserTC001(CommonTC.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserTC001 -->
+        <test-method is-config="true" signature="navigateGATab()[pri:0, instance:com.ISCO.testcases.CommonTC@7668d560]" started-at="2022-11-24T15:44:09Z" name="navigateGATab" finished-at="2022-11-24T15:44:09Z" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateGATab -->
+        <test-method signature="UserTC002()[pri:0, instance:com.ISCO.testcases.CommonTC@7668d560]" started-at="2022-11-24T15:44:09Z" name="UserTC002" finished-at="2022-11-24T15:44:14Z" duration-ms="5096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserTC002 -->
+        <test-method is-config="true" signature="navigateGATab()[pri:0, instance:com.ISCO.testcases.CommonTC@7668d560]" started-at="2022-11-24T15:44:14Z" name="navigateGATab" finished-at="2022-11-24T15:44:14Z" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateGATab -->
+        <test-method signature="UserTC005()[pri:0, instance:com.ISCO.testcases.CommonTC@7668d560]" started-at="2022-11-24T15:44:14Z" name="UserTC005" finished-at="2022-11-24T15:44:31Z" duration-ms="16930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserTC005 -->
+        <test-method is-config="true" signature="navigateGATab()[pri:0, instance:com.ISCO.testcases.CommonTC@7668d560]" started-at="2022-11-24T15:44:31Z" name="navigateGATab" finished-at="2022-11-24T15:44:31Z" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateGATab -->
+        <test-method signature="UserTC006()[pri:0, instance:com.ISCO.testcases.CommonTC@7668d560]" started-at="2022-11-24T15:44:31Z" name="UserTC006" finished-at="2022-11-24T15:44:48Z" duration-ms="16853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserTC006 -->
+      </class> <!-- com.ISCO.testcases.CommonTC -->
+      <class name="com.ISCO.testcases.LoginTC">
+        <test-method is-config="true" signature="Setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ISCO.testcases.LoginTC@4837595f]" started-at="2022-11-24T15:43:29Z" name="Setup" finished-at="2022-11-24T15:43:40Z" duration-ms="10679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://isco.k8sqa.pst.innoveo.cloud/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[skyeqaauto1.dev.innoveo.cloud]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method is-config="true" signature="loadTestData()[pri:0, instance:com.ISCO.testcases.LoginTC@4837595f]" started-at="2022-11-24T15:43:40Z" name="loadTestData" finished-at="2022-11-24T15:43:41Z" depends-on-methods="com.ISCO.base.BaseClass.Setup" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadTestData -->
+        <test-method is-config="true" signature="LoginToSkye()[pri:0, instance:com.ISCO.testcases.LoginTC@4837595f]" started-at="2022-11-24T15:43:41Z" name="LoginToSkye" finished-at="2022-11-24T15:43:52Z" duration-ms="11184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginToSkye -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.ISCO.testcases.LoginTC@4837595f]" started-at="2022-11-24T15:44:49Z" name="quitDriver" finished-at="2022-11-24T15:44:50Z" duration-ms="1038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.ISCO.testcases.LoginTC -->
+    </test> <!-- Skye Regression Tests -->
+  </suite> <!-- Skye Regression Suite -->
+</testng-results>

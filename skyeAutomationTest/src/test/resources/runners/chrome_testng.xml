@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Skye Regression Suite" >
+	<listeners>
+		<listener class-name="com.ISCO.listeners.TestListeners" />
+	</listeners>
+	<parameter name="browser" value="Edge" />
+	<parameter name="puttyURL" value="skyeqaauto1.dev.innoveo.cloud"/>
+	<parameter name="appURL" value="https://isco.k8sqa.pst.innoveo.cloud/"/>
+	<test name="Skye Regression Tests">
+		<classes>
+			<class name="com.ISCO.testcases.LoginTC">
+				<methods>
+				</methods>
+			</class>
+			<class name="com.ISCO.testcases.CommonTC">
+				<methods>
+				<include name="UserTC001" />
+				<include name="UserTC002" />
+				<exclude name="UserTC003" />
+				<include name="UserTC005" />
+				<include name="UserTC006" />
+				<exclude name="UserTC007" />
+				<exclude name="UserTC008" />
+				<exclude name="UserTC009" />
+				<exclude name="AccountTC010" />
+				<exclude name="AccountTC011" />
+				<exclude name="AccountTC012" />
+				<exclude name="AccountTC013" />
+				<exclude name="AccountTC014" />
+				<exclude name="AccountTC015" />
+				<exclude name="AccountTC016" />
+				<exclude name="AccountTC017" />
+				<exclude name="AccountTC018" />
+				<exclude name="AccountTC019" />
+				<exclude name="AccountTC020" />
+				<exclude name="ApplicationTC021" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

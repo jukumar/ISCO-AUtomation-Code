@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Skye Regression Suite]">
+  <parameter name="puttyURL" value="skyeqaauto1.dev.innoveo.cloud"/>
+  <parameter name="browser" value="Edge"/>
+  <parameter name="appURL" value="https://isco.k8sqa.pst.innoveo.cloud/"/>
+  <listeners>
+    <listener class-name="com.ISCO.listeners.TestListeners"/>
+  </listeners>
+  <test parallel="none" name="Skye Regression Tests(failed)">
+    <classes>
+      <class name="com.ISCO.testcases.CommonTC">
+        <methods>
+          <include name="loadPageElements"/>
+          <include name="UserTC001"/>
+          <include name="navigateGATab"/>
+        </methods>
+      </class> <!-- com.ISCO.testcases.CommonTC -->
+      <class name="com.ISCO.testcases.LoginTC">
+        <methods>
+          <include name="Setup"/>
+          <include name="LoginToSkye"/>
+          <include name="loadTestData"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.ISCO.testcases.LoginTC -->
+    </classes>
+  </test> <!-- Skye Regression Tests(failed) -->
+</suite> <!-- Failed suite [Skye Regression Suite] -->

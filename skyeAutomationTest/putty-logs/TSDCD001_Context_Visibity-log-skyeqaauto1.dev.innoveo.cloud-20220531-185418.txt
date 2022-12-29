@@ -1,0 +1,414 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2022.05.31 18:54:18 =~=~=~=~=~=~=~=~=~=~=~=
+Using username "innkare".
+Pre-authentication banner message from server:
+| +-----------------------------------------------------------------+
+| | This system is for the use of authorized users only.  Usage of  |
+| | this system may be monitored and recorded by system personnel.  |
+| |                                                                 |
+| | Anyone using this system expressly consents to such monitoring  |
+| | and is advised that if such monitoring reveals possible         |
+| | evidence of criminal activity, system personnel may provide the |
+| | evidence from such monitoring to law enforcement officials.     |
+| +-----------------------------------------------------------------+
+End of banner message from server
+Authenticating with public key "rsa-key-2022" from agent
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.ShallowEtagHeaderFilter.doFilterInternal(ShallowEtagHeaderFilter.java:106) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationLogoutFilter.doFilter(FederationLogoutFilter.java:49) [skye-web-springfediz-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationMetadataExposingFilter.doFilter(FederationMetadataExposingFilter.java:89) [skye-web-springfediz-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.8.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.SessionTimeoutHandlerFilter.doFilter(SessionTimeoutHandlerFilter.java:33) [classes/:8.8.0-SNAPSHOT]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.SameSiteCookieHeaderFilter.doFilter(SameSiteCookieHeaderFilter.java:43) [classes/:8.8.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.web.filter.CorsFilter.doFilter(CorsFilter.java:29) [skye-web-springmvc-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71) [log4j-web-2.17.1.jar:2.17.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [catalina.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.41]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+2022-05-31 09:03:35,467 [http-nio-8443-exec-9] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:03:35,467 [http-nio-8443-exec-9] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:03:35,468 [http-nio-8443-exec-9] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:05:07,629 [http-nio-8443-exec-5] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:05:07,629 [http-nio-8443-exec-5] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:05:07,630 [http-nio-8443-exec-5] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:06:14,086 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:06:14,087 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:06:14,087 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:06:36,618 [http-nio-8443-exec-4] userc1 WARN core - Error parsing date <DefaultValue> to Calendar in attribute with textIdPath <TSGATB009TB3>
+2022-05-31 09:08:40,637 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:08:40,637 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:08:40,637 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:13:12,198 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:13:12,198 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:13:12,198 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:20:44,872 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:20:44,872 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:20:44,872 [http-nio-8443-exec-1] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:29:00,692 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:29:00,693 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:29:00,693 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:29:35,263 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:29:35,264 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:29:35,264 [http-nio-8443-exec-2] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:30:26,768 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:30:26,768 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:30:26,768 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:31:12,872 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:31:12,872 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 09:31:12,872 [http-nio-8443-exec-3] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 10:45:01,113 [scheduler-1]  ERROR TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.IllegalStateException: Error performing search operation on index skyeqaauto1_skyeapp_eventinstances
+	at com.innoveo.skye.services.search.elasticsearch.client.SkyeElasticsearchRestClient.search(SkyeElasticsearchRestClient.java:95) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchIndex.clientSearch(ElasticsearchIndex.java:106) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchIndex.searchIds(ElasticsearchIndex.java:90) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchEventSearch.searchEventsReadyForTrigger(ElasticsearchEventSearch.java:104) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.searchEventsReadyForTrigger(EventProcessManager.java:896) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.processEvents(EventProcessManager.java:129) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.processEvents(EventProcessManager.java:120) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.spring.scheduling.EventServiceJob.processEvents(EventServiceJob.java:30) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.spring.scheduling.EventServiceJob.run(EventServiceJob.java:25) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor450.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) [spring-context-5.3.17.jar:5.3.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:?]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: java.net.ConnectException: Timeout connecting to [elasticsearch6.dev.innoveo.cloud/10.100.241.251:80]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:169) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:632) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:898) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:198) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:213) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:158) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:194) ~[httpasyncclient-4.1.3.jar:4.1.3]
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64) ~[httpasyncclient-4.1.3.jar:4.1.3]
+	... 1 more
+2022-05-31 11:02:49,581 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:02:49,582 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:02:49,582 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:06:40,204 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:06:40,205 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:06:40,205 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:08:01,086 [scheduler-1]  ERROR TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.IllegalStateException: Error performing search operation on index skyeqaauto1_skyeapp_eventinstances
+	at com.innoveo.skye.services.search.elasticsearch.client.SkyeElasticsearchRestClient.search(SkyeElasticsearchRestClient.java:95) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchIndex.clientSearch(ElasticsearchIndex.java:106) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchIndex.searchIds(ElasticsearchIndex.java:90) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchEventSearch.searchEventsReadyForTrigger(ElasticsearchEventSearch.java:104) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.searchEventsReadyForTrigger(EventProcessManager.java:896) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.processEvents(EventProcessManager.java:129) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.processEvents(EventProcessManager.java:120) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.spring.scheduling.EventServiceJob.processEvents(EventServiceJob.java:30) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.spring.scheduling.EventServiceJob.run(EventServiceJob.java:25) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor450.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) [spring-context-5.3.17.jar:5.3.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:?]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: java.net.ConnectException: Timeout connecting to [elasticsearch6.dev.innoveo.cloud/10.100.241.251:80]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:169) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:632) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:898) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:198) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:213) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:158) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:194) ~[httpasyncclient-4.1.3.jar:4.1.3]
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64) ~[httpasyncclient-4.1.3.jar:4.1.3]
+	... 1 more
+2022-05-31 11:10:46,512 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:10:46,513 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:10:46,513 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:35:01,031 [scheduler-1]  ERROR TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.IllegalStateException: Error performing search operation on index skyeqaauto1_skyeapp_eventinstances
+	at com.innoveo.skye.services.search.elasticsearch.client.SkyeElasticsearchRestClient.search(SkyeElasticsearchRestClient.java:95) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchIndex.clientSearch(ElasticsearchIndex.java:106) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchIndex.searchIds(ElasticsearchIndex.java:90) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchEventSearch.searchEventsReadyForTrigger(ElasticsearchEventSearch.java:104) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.searchEventsReadyForTrigger(EventProcessManager.java:896) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.processEvents(EventProcessManager.java:129) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.processEvents(EventProcessManager.java:120) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.spring.scheduling.EventServiceJob.processEvents(EventServiceJob.java:30) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.spring.scheduling.EventServiceJob.run(EventServiceJob.java:25) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor450.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) [spring-context-5.3.17.jar:5.3.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:?]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: java.net.ConnectException: Timeout connecting to [elasticsearch6.dev.innoveo.cloud/10.100.241.251:80]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:169) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:632) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:898) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:198) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:213) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:158) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:194) ~[httpasyncclient-4.1.3.jar:4.1.3]
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64) ~[httpasyncclient-4.1.3.jar:4.1.3]
+	... 1 more
+2022-05-31 11:43:02,520 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:43:02,521 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:43:02,521 [http-nio-8443-exec-8] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 11:58:01,061 [scheduler-1]  ERROR TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.IllegalStateException: Error performing search operation on index skyeqaauto1_skyeapp_eventinstances
+	at com.innoveo.skye.services.search.elasticsearch.client.SkyeElasticsearchRestClient.search(SkyeElasticsearchRestClient.java:95) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchIndex.clientSearch(ElasticsearchIndex.java:106) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchIndex.searchIds(ElasticsearchIndex.java:90) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchEventSearch.searchEventsReadyForTrigger(ElasticsearchEventSearch.java:104) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.searchEventsReadyForTrigger(EventProcessManager.java:896) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.processEvents(EventProcessManager.java:129) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.processEvents(EventProcessManager.java:120) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.spring.scheduling.EventServiceJob.processEvents(EventServiceJob.java:30) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.spring.scheduling.EventServiceJob.run(EventServiceJob.java:25) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor450.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) [spring-context-5.3.17.jar:5.3.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:?]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: java.net.ConnectException: Timeout connecting to [elasticsearch6.dev.innoveo.cloud/10.100.241.251:80]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:169) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:632) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:898) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:198) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:213) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:158) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:194) ~[httpasyncclient-4.1.3.jar:4.1.3]
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64) ~[httpasyncclient-4.1.3.jar:4.1.3]
+	... 1 more
+2022-05-31 12:36:01,029 [scheduler-1]  ERROR TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+java.lang.IllegalStateException: Error performing search operation on index skyeqaauto1_skyeapp_eventinstances
+	at com.innoveo.skye.services.search.elasticsearch.client.SkyeElasticsearchRestClient.search(SkyeElasticsearchRestClient.java:95) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchIndex.clientSearch(ElasticsearchIndex.java:106) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchIndex.searchIds(ElasticsearchIndex.java:90) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.search.elasticsearch.indexsearch.ElasticsearchEventSearch.searchEventsReadyForTrigger(ElasticsearchEventSearch.java:104) ~[skye-services-search-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.searchEventsReadyForTrigger(EventProcessManager.java:896) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.processEvents(EventProcessManager.java:129) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.core.common.persistence.EventProcessManager.processEvents(EventProcessManager.java:120) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.spring.scheduling.EventServiceJob.processEvents(EventServiceJob.java:30) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.services.spring.scheduling.EventServiceJob.run(EventServiceJob.java:25) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at jdk.internal.reflect.GeneratedMethodAccessor450.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.17.jar:5.3.17]
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) [spring-context-5.3.17.jar:5.3.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:?]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: java.net.ConnectException: Timeout connecting to [elasticsearch6.dev.innoveo.cloud/10.100.241.251:80]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:169) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:632) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:898) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:198) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:213) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:158) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351) ~[httpcore-nio-4.4.13.jar:4.4.13]
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:194) ~[httpasyncclient-4.1.3.jar:4.1.3]
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64) ~[httpasyncclient-4.1.3.jar:4.1.3]
+	... 1 more
+2022-05-31 13:16:46,548 [http-nio-8443-exec-4]  ERROR general - An exception was thrown while processing the request
+java.lang.IllegalArgumentException: Resource 'Innoveo_Skye_Logo_Straight_White_Screen_png' in definition 'Application' for locale 'en_US' not found.
+	at com.innoveo.skye.services.domain.resource.DefinitionResourceServiceImpl.getResource(DefinitionResourceServiceImpl.java:63) ~[skye-services-core-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.spring.controllers.rest.v2.ResourceController.getResource(ResourceController.java:192) ~[skye-web-springmvc-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at com.innoveo.skye.spring.controllers.rest.v2.ResourceController.getApplicationResource(ResourceController.java:152) ~[skye-web-springmvc-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.17.jar:5.3.17]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [servlet-api.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.17.jar:5.3.17]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.javasimon.javaee.SimonServletFilter.doFilterWithMonitoring(SimonServletFilter.java:215) [javasimon-javaee-3.2.1.jar:?]
+	at org.javasimon.javaee.SimonServletFilter.doFilter(SimonServletFilter.java:205) [javasimon-javaee-3.2.1.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.AuditTrailFilter.doFilter(AuditTrailFilter.java:48) [classes/:8.8.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.UserToLogFilter.doFilter(UserToLogFilter.java:56) [classes/:8.8.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.8.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.ShallowEtagHeaderFilter.doFilterInternal(ShallowEtagHeaderFilter.java:106) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationLogoutFilter.doFilter(FederationLogoutFilter.java:49) [skye-web-springfediz-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.web.filter.FederationMetadataExposingFilter.doFilter(FederationMetadataExposingFilter.java:89) [skye-web-springfediz-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at com.innoveo.skye.shared.web.filter.ExceptionTaggingFilter.doFilter(ExceptionTaggingFilter.java:52) [classes/:8.8.0-SNAPSHOT]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.4.jar:5.4.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.SessionTimeoutHandlerFilter.doFilter(SessionTimeoutHandlerFilter.java:33) [classes/:8.8.0-SNAPSHOT]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.17.jar:5.3.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.17.jar:5.3.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.shared.web.filter.SameSiteCookieHeaderFilter.doFilter(SameSiteCookieHeaderFilter.java:43) [classes/:8.8.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at com.innoveo.skye.web.filter.CorsFilter.doFilter(CorsFilter.java:29) [skye-web-springmvc-8.8.0-SNAPSHOT.jar:8.8.0-SNAPSHOT]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.logging.log4j.web.Log4jServletFilter.doFilter(Log4jServletFilter.java:71) [log4j-web-2.17.1.jar:2.17.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.41]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690) [catalina.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [catalina.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-coyote.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.41]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+2022-05-31 13:17:36,834 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:17:36,835 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:17:36,835 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:18:53,753 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:18:53,754 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:18:53,754 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:20:07,637 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:20:07,638 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:20:07,638 [http-nio-8443-exec-6] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:22:30,904 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:22:30,905 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
+2022-05-31 13:22:30,905 [http-nio-8443-exec-10] userc1 ERROR search - No model(s) with textId(s) 'Referral' were found'
